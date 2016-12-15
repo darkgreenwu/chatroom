@@ -1,0 +1,56 @@
+/* reset */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,input,dl,dd,dt,form{margin:0;padding:0;}
+body{font-family:arial,'Microsoft YaHei';color:#666;}
+ul{list-style:none;}
+img{border:none;}
+a{text-decoration:none;}
+.clear{clear:both;}
+/*i{font-style:normal;font-family:consolas;}*/
+.clearfix:after{
+    content:'200B';
+    display:block;
+    height:0;
+    font-size:0;
+    clear:both;
+}
+/*为了出发低版本ie浏览器*/
+.clearfix{*zoom:1;}
+/*设置html，body高度100%*/
+html,body{height:100%}
+body{background:url(../images/chatroom_bg2.jpg) no-repeat;background-size:100% 100%;position:relative}
+/*登录区域*/
+.text{position:absolute;left:20%;top:35%;color:#fff}
+.text h2{font-size:50px;padding-bottom:40px;font-family: "Adobe Caslon Pro"}
+.text p{font-size:30px;line-height:40px;font-family: "Adobe Fan Heiti Std B"}
+.login_area{width:350px;height:353px;border:1px solid #fff;position:absolute;left:60%;top:30%;background:#f2eafe;opacity:0.8;
+border-radius:6px;padding:25px;transition:all 1s}
+.login_area h3{font-weight:normal;color:#3c3c3c;line-height:50px}
+.login_area form p{padding:10px 0}
+.login_area .username{width:251px;height:40px;padding-left:50px;border:none;border:1px solid #ddd}
+.login_area form .username{background:url(../images/user_icon_03.jpg) no-repeat 0 0}
+.login_area form .password{background:url(../images/pswd_icon_06.jpg) no-repeat 0 0}
+.login_area button{width:301px;height:41px;background:#ff4400;color:#fff;border:none}
+.login_area button:hover{opacity:0.5}
+.login_area:hover{box-shadow:5px 5px 20px rgba(255,255,255,0.5);}
+.other_login_methods{padding-top:20px}
+.other_login_methods a i{color:#fff;font-size:20px;transition:all 0.5s;line-height:30px}
+.other_login_methods a{margin:0 20px 0 5px;width:30px;height:30px;line-height:30px;text-align:center;display:inline-block;border-radius:50%;border:1px solid #ddd;
+background:#eee}
+.other_login_methods a:hover i{color:#e52425;}
+.other_login_methods span{font-size:14px}
+.other_login_methods .login_weixin{position:relative}
+.other_login_methods .login_weixin img{position:absolute;left:0;top:25px;}
+#qrcode{display:none}
+.avatar li{width:40px;height:40px;text-align:center;line-height:35px;float:left;overflow:hidden;border-radius:50%}
+.avatar li img{width:40px;height:40px}
+/*欢迎区域*/
+.hide{display:none}
+#chatroom{width:800px;height:600px;border:1px solid #fff;position:absolute;margin:auto;left:0;top:0;bottom:0;right:0;background:#f2eafe;opacity:0.9;
+    border-radius:6px;padding:25px;}
+#chatroom h3{border-radius:6px;background:indianred;width:100px;margin-bottom:10px;text-align:center;font-weight:normal;color:#fff}
+#chatroom #messages{width:600px;height:500px;background:palevioletred;margin-bottom:20px}
+#chatroom #message{width:600px;height:40px;}
+#chatroom #send{height:40px;width:50px;background:wheat;border:none}
+/*定义聊天内容颜色*/
+.loginMsg { color: #fff;}
+.selfMsg{color:green;}
